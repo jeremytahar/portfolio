@@ -21,25 +21,25 @@ html {
 
 @font-face {
   font-family: 'Ackor';
-  src: url('/fonts/Ackor.woff2') format('woff2'),
+  src: url('fonts/Ackor.woff2') format('woff2'),
     url('/fonts/Ackor.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Arista';
-  src: url('/fonts/Arista.ttf') format('ttf');
+  src: url('fonts/Arista.ttf') format('ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Arista';
-  src: url('/fonts/Arista-Semibold.ttf') format('ttf');
+  src: url('fonts/Arista-Semibold.ttf') format('ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Nunito';
-  src: url('/fonts/Nunito.ttf');
+  src: url('fonts/Nunito.ttf');
 }
 
 
