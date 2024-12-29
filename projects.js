@@ -19,8 +19,8 @@ projects.forEach(project => {
   });
 
   project.addEventListener("mousemove", (e) => {
-    const x = e.clientX - previewImg.width / 2;
-    const y = e.clientY - previewImg.offsetHeight / 1.15;
+    const x = e.pageX - previewImg.width / 2;
+    const y = e.pageY - previewImg.offsetHeight / 1.15;
     preview.style.transform = `translate(${x}px, ${y}px)`;
 
     customCursor.style.left = `${e.clientX}px`;
@@ -34,64 +34,64 @@ projects.forEach(project => {
   });
 });
 
-function pageTransition() {
-  let tl = gsap.timeline();
+// function pageTransition() {
+//   let tl = gsap.timeline();
 
-  tl.to('.transition', {
-    duration: 1,
-    scaleY: 1,
-    transformOrigin: 'bottom',
-    ease: 'power4.inOut'
-  });
+//   tl.to('.transition', {
+//     duration: 1,
+//     scaleY: 1,
+//     transformOrigin: 'bottom',
+//     ease: 'power4.inOut'
+//   });
 
-  tl.to('.transition', {
-    duration: 1,
-    scaleY: 0,
-    transformOrigin: 'top',
-    ease: 'power4.inOut',
-    delay: 0.2
-  });
-}
+//   tl.to('.transition', {
+//     duration: 1,
+//     scaleY: 0,
+//     transformOrigin: 'top',
+//     ease: 'power4.inOut',
+//     delay: 0.2
+//   });
+// }
 
-function contentAnimation() {
-  let tl = gsap.timeline();
+// function contentAnimation() {
+//   let tl = gsap.timeline();
 
-  tl.to('h1', {
-    top: 0,
-    duration: 1,
-    ease: 'power3.inOut',
-    delay: 0.75
-  });
-}
+//   tl.to('h1', {
+//     top: 0,
+//     duration: 1,
+//     ease: 'power3.inOut',
+//     delay: 0.75
+//   });
+// }
 
-function delay(n) {
-  n = n || 0;
-  return new Promise(done => {
-    setTimeout(() => {
-      done();
-    }, n);
-  });
-}
+// function delay(n) {
+//   n = n || 0;
+//   return new Promise(done => {
+//     setTimeout(() => {
+//       done();
+//     }, n);
+//   });
+// }
 
-barba.init({
-  sync: true,
-  transitions: [
-    {
-      async leave(data) {
-        const done = this.async();
+// barba.init({
+//   sync: true,
+//   transitions: [
+//     {
+//       async leave(data) {
+//         const done = this.async();
 
-        pageTransition();
-        await delay(1000);
-        done();
-      },
+//         pageTransition();
+//         await delay(1000);
+//         done();
+//       },
 
-      async enter(data) {
-        contentAnimation();
-      },
+//       async enter(data) {
+//         contentAnimation();
+//       },
 
-      async once(data) {
-        contentAnimation();
-      },
-    },
-  ],
-})
+//       async once(data) {
+//         contentAnimation();
+//       },
+//     },
+//   ],
+// })
