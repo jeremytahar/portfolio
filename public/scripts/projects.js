@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectId = new URLSearchParams(window.location.search).get("id"); // Récupère l'ID du projet depuis l'URL
   const projectInfoContainer = document.querySelector(".wrapper");
 
-  fetch("/public/scripts/projects.json")
+  fetch("../public/scripts/projects.json")
     .then(response => response.json())
     .then(data => {
       const project = data.find(item => item.id === projectId);
