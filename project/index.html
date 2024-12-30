@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jeremy Tahar | Projects</title>
+	<link rel="stylesheet" type="text/css" href="/public/style.css">
+	<meta name="format-detection" content="telephone=no">
+</head>
+
+<body data-barba="wrapper">
+	<div class="site-content">
+		<nav class="navbar">
+			<div class="logo logo-mobile">
+				<a href="index.html"><img src="/public/img/logo.svg" alt="Logo"></a>
+			</div>
+			<div class="burger-btn">
+				<span></span>
+			</div>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/projects">Projects</a></li>
+				<li class="logo logo-desktop"><img src="/public/img/logo.svg" alt="Logo"></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<main class="wrapper">
+		<div class="project-header">
+			<h1></h1>
+			<img src="" alt="Project Image">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220"
+				class="rotating-circle">
+				<circle class="circle-border" cx="110" cy="110" r="90" fill="none" stroke="#fff" stroke-width="4"
+					stroke-dasharray="475 130" stroke-dashoffset="460" />
+
+				<path id="circlePath" d="M 110,208 A 120,90 0 1,0 10,0 Z" fill="none" />
+				<text font-size="15" fill="#fff" text-anchor="middle" font-family="Nunito" class="circle-text">
+					<textPath href="#circlePath" startOffset="10%">
+						VISIT WEBSITE
+					</textPath>
+				</text>
+
+				<a href="https://resaweb.tahar.butmmi.o2switch.site" target="_blank">
+					<image class="circle-image" x="85" y="85" width="50" height="50" href="/public/img/web.svg" />
+				</a>
+			</svg>
+		</div>
+		<div class="project-info">
+			<div class="title-date">
+				<h2>Project info</h2>
+				<div class="line"></div>
+				<span></span>
+			</div>
+			<p></p>
+			<div class="tech">
+				<ul></ul>
+			</div>
+			<div class="github">
+				<a href="" target="_blank">See on github <img src="/public/img/arrow-diagonal.svg" alt=""></a>
+			</div>
+		</div>
+		<div class="video-wrapper">
+			<div class="video-container">
+				<video autoplay loop muted playsinline>
+					<source src="" type="video/webm">
+				</video>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+		integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="/public/scripts/projects.js"></script>
+	<script src="/public/scripts/script.js"></script>
+</body>
+
+</html>
