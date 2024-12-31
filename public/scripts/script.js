@@ -209,9 +209,9 @@ const tl = gsap.timeline()
 
 ScrollTrigger.create({
     trigger: ".slider1 h2",
-    start: "center 60%",
+    start: "center center",
     endTrigger: ".slider1 li:last-of-type",
-    end: "center 60%",
+    end: "center center",
     pin: true,
     animation: tl,
     // markers: true,

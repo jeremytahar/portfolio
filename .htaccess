@@ -1,11 +1,3 @@
 RewriteEngine On
-
-# Redirection des domaines jeremytahar.com et jeremytahar.eu vers jeremytahar.fr
-RewriteCond %{HTTP_HOST} ^(www\.)?jeremytahar\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^(www\.)?jeremytahar\.eu$
-RewriteRule ^(.*)$ https://jeremytahar.fr/$1 [R=301,L]
-
-# Forcer HTTPS pour jeremytahar.fr
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_HOST} ^(www\.)?jeremytahar\.fr$
+RewriteCond %{SERVER_PORT} !=443
 RewriteRule ^(.*)$ https://jeremytahar.fr/$1 [R=301,L]

@@ -638,7 +638,7 @@ body {
       }
 
       li {
-        font-size: 2rem;
+        font-size: 3rem;
       }
     }
   }
@@ -721,23 +721,42 @@ body {
 footer {
   border-top: 1px solid #adadad;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 10px 30px;
+  gap: 10px;
+  padding: 30px 30px;
 
-  img {
-    width: 75px;
-    height: 75px;
+  span {
+    font-size: 0.9rem;
+    color: #dadada;
+    font-family: 'NeueMontreal', sans-serif;
   }
 
   .contact-links {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
+    justify-content: center;
+    width: fit-content;
 
-    img {
-      width: 30px;
-      height: 30px;
+    a {
+      color: #dadada;
+      font-family: 'Ackor', sans-serif;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    span {
+      font-size: 1rem;
+    }
+
+    .contact-links {
+      gap: 50px;
+      a {
+        font-size: 2.5rem;
+      }
     }
   }
 }
